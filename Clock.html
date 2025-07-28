@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+   
+<head>
+    <title>Document</title>
+    <style>
+     body{
+        background-color: black;
+     }
+     div{
+        min-height: 250px;
+        width: 1200px;
+        border: 10px solid red;
+        margin:100px auto ;
+        border-radius: 5px;
+        background-color: white;
+        font-size: 200px;
+        color: red;
+        text-align: center;
+        line-height: 250px;
+        box-shadow: 0px 0px 10px 10px black inset;
+        font-family:Digital-7;
+     }
+    </style>
+</head>
+<body>
+    <div>Time</div>
+    <script>
+   function clock(){
+    var box = document.querySelector("div");
+    var d = new Date();
+    var res = d.toLocaleTimeString();
+    box.innerText = res;
+   }
+   setInterval(clock,1000)
+    </script>
+</body>
+</html>
